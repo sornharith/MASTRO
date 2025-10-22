@@ -28,8 +28,8 @@ The system implements a multi-agent architecture that includes:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/sornharith/MASTRO.git
+cd MASTRO
 ```
 
 2. Install dependencies:
@@ -151,15 +151,16 @@ The system works with three types of educational datasets:
 
 **OULAD (Open University Learning Analytics Dataset)**
 - Individual CSV files: `assessments.csv`, `courses.csv`, `studentInfo.csv`, `studentRegistration.csv`, `studentAssessment.csv`, `studentVle.csv`, and `vle.csv`
-- Download from: [Open University Learning Analytics Dataset](https://analyse.kmi.open.ac.uk/open_dataset)
+- Download from: [Open University Learning Analytics Dataset](https://www.kaggle.com/datasets/anlgrbz/student-demographics-online-education-dataoulad/data)
 
 **UCI Student Performance Dataset**
 - Single CSV file with columns for demographics, grades, and final target
-- Download from: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Student+Performance)
+- Download from: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)
 
 **XuetangX MOOC Dataset**
 - `Train.csv`, `Test.csv`, `user_info.csv` files
 - Available upon request from research team
+- - Download from: [XuetangX MOOC Dataset](https://www.kaggle.com/datasets/anasnofal/mooc-data-xuetangx)
 
 ### Dataset Directory Structure
 
