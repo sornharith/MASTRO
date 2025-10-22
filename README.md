@@ -147,6 +147,9 @@ python -m main.py --llama-size 7b --ollama True --N_students 50 --folder_path "r
 
 ### Required Data Format
 
+### Dataset Setup
+
+For detailed instructions on downloading and setting up datasets, see [DATASET_SETUP.md](DATASET_SETUP.md).
 The system works with three types of educational datasets:
 
 **OULAD (Open University Learning Analytics Dataset)**
@@ -376,6 +379,3 @@ If you use this code in your research, please cite:
 
 For questions or issues, please open an issue in the GitHub repository.
 
-## Dataset Setup
-
-For detailed instructions on downloading and setting up datasets, see [DATASET_SETUP.md](DATASET_SETUP.md).
