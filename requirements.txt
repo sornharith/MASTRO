@@ -1,0 +1,16 @@
+pandas>=1.5.0
+numpy>=1.21.0
+torch>=1.12.0
+scikit-learn>=1.1.0
+catboost>=1.1.0
+optuna>=3.0.0
+transformers>=4.20.0
+peft>=0.4.0
+langchain>=0.0.200
+langchain-community>=0.0.10
+langchain-huggingface>=0.0.1
+tqdm>=4.64.0
+shap>=0.42.0
+joblib>=1.1.0
+accelerate>=0.20.0
+bitsandbytes>=0.41.0

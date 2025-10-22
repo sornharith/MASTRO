@@ -1,0 +1,7 @@
+.vscode/
+development/
+catboost_tuning.db
+utils/gpt2_dropout_qlora/runs/
+utils/gpt2_dropout_qlora/checkpoint-*/
+raw_datasets/
+datasets/

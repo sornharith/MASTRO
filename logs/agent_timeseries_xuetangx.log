@@ -1,0 +1,38 @@
+2025-10-15 01:46:47,621 - INFO - device=cuda
+2025-10-15 01:46:47,621 - INFO - Model selected: llama2:7b
+2025-10-15 01:46:47,621 - INFO - Loading processed data from datasets\ts_datasets_xuetangx.csv...
+2025-10-15 01:46:49,159 - INFO - ¡V Running on 840 rows from 50 students
+2025-10-15 01:46:49,159 - INFO - Time series dataset: 666 train, 174 test samples
+2025-10-15 01:46:50,001 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-10-15 01:46:53,146 - INFO - using ollama : True
+2025-10-15 01:46:53,146 - INFO - Defining agent feature sets...
+2025-10-15 01:46:53,146 - INFO - Using XuetangX-specific feature sets for agents.
+2025-10-15 01:46:53,146 - INFO - Training time series agents...
+2025-10-15 01:46:53,146 - INFO - --> WARNING: All features for agent 'Performance' are constant. Skipping training.
+2025-10-15 01:46:53,146 - INFO - No pre-trained model found or retuning forced. Training new model for Baseline...
+2025-10-15 01:48:08,149 - INFO - Saving trained model to Baseline_agent_model_xuetangx.joblib
+2025-10-15 01:48:08,158 - INFO - No pre-trained model found or retuning forced. Training new model for Engagement...
+2025-10-15 01:49:57,953 - INFO - Saving trained model to Engagement_agent_model_xuetangx.joblib
+2025-10-15 01:49:57,969 - INFO - No pre-trained model found or retuning forced. Training new model for Temporal...
+2025-10-15 01:52:13,610 - INFO - Saving trained model to Temporal_agent_model_xuetangx.joblib
+2025-10-15 01:52:13,904 - INFO - SMEMoETS agent training completed
+2025-10-15 01:52:14,006 - INFO - Running time series agent predictions...
+2025-10-15 01:55:22,585 - INFO - Completed Performance agent: mean risk = 0.150
+2025-10-15 01:59:02,060 - INFO - Completed Baseline agent: mean risk = 0.750
+2025-10-15 02:04:54,583 - INFO - Completed Engagement agent: mean risk = 0.497
+2025-10-15 02:11:55,756 - INFO - Completed Temporal agent: mean risk = 0.697
+2025-10-15 02:12:41,873 - INFO - Completed CourseDifficulty agent: mean risk = 0.703
+2025-10-15 02:25:12,218 - INFO - Completed SMETimes agent: mean risk = 1.201
+2025-10-15 02:25:12,218 - INFO - Training new stacker model.
+2025-10-15 02:25:12,782 - INFO - Stacker F1 best_th=0.40  val_F1=0.939
+2025-10-15 02:25:12,782 - INFO - Running final arbiter decisions...
+2025-10-15 03:11:29,639 - INFO - Creating comprehensive time series results...
+2025-10-15 03:11:29,639 - INFO - Time Series Model Performance:
+2025-10-15 03:11:29,639 - INFO -   Accuracy: 0.621
+2025-10-15 03:11:29,639 - INFO -   Recall: 0.713
+2025-10-15 03:11:29,639 - INFO -   F1-Score: 0.700
+2025-10-15 03:11:29,639 - INFO -   AUC-ROC: 0.657
+2025-10-15 03:11:29,650 - INFO -   Early stage accuracy: 0.690 (n=58)
+2025-10-15 03:11:29,650 - INFO -   Mid stage accuracy: 0.621 (n=58)
+2025-10-15 03:11:29,650 - INFO -   Late stage accuracy: 0.552 (n=58)
+2025-10-15 03:11:29,666 - INFO - Saved comprehensive results ¡÷ results/timeseries_multi_agent_dropout_predictions_xuetangx.csv

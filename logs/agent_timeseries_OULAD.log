@@ -1,0 +1,103 @@
+2025-10-14 23:32:02,894 - INFO - device=cuda
+2025-10-14 23:32:02,894 - INFO - Model selected: llama2:7b
+2025-10-14 23:32:02,894 - INFO - Loading processed data from D:\Project\st\llm_dataset\MPEC\datasets\ts_datasets.csv...
+2025-10-14 23:32:03,324 - INFO - ¡V Running on 348 rows from 50 students
+2025-10-14 23:32:03,337 - INFO - Time series dataset: 258 train, 90 test samples
+2025-10-14 23:32:04,161 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-10-14 23:32:07,429 - INFO - using ollama : True
+2025-10-14 23:32:07,429 - INFO - Defining agent feature sets...
+2025-10-14 23:32:07,429 - INFO - Using default OULAD feature sets for agents.
+2025-10-14 23:32:07,429 - INFO - Training time series agents...
+2025-10-14 23:32:07,429 - INFO - No pre-trained model found or retuning forced. Training new model for Performance...
+2025-10-14 23:33:58,929 - INFO - Saving trained model to Performance_agent_model_OULAD.joblib
+2025-10-14 23:33:58,929 - INFO - No pre-trained model found or retuning forced. Training new model for Baseline...
+2025-10-14 23:35:08,931 - INFO - Saving trained model to Baseline_agent_model_OULAD.joblib
+2025-10-14 23:35:08,941 - INFO - No pre-trained model found or retuning forced. Training new model for Engagement...
+2025-10-14 23:37:15,553 - INFO - Saving trained model to Engagement_agent_model_OULAD.joblib
+2025-10-14 23:37:15,574 - INFO - No pre-trained model found or retuning forced. Training new model for Temporal...
+2025-10-14 23:39:05,738 - INFO - Saving trained model to Temporal_agent_model_OULAD.joblib
+2025-10-14 23:39:06,052 - INFO - SMEMoETS agent training completed
+2025-10-14 23:39:06,133 - INFO - Running time series agent predictions...
+2025-10-14 23:40:20,527 - INFO - Completed Performance agent: mean risk = 0.151
+2025-10-14 23:42:13,461 - INFO - Completed Baseline agent: mean risk = 0.741
+2025-10-14 23:45:17,939 - INFO - Completed Engagement agent: mean risk = 0.510
+2025-10-14 23:48:49,450 - INFO - Completed Temporal agent: mean risk = 0.699
+2025-10-14 23:49:13,047 - INFO - Completed CourseDifficulty agent: mean risk = 0.597
+2025-10-14 23:55:41,004 - INFO - Completed SMETimes agent: mean risk = 1.381
+2025-10-14 23:55:41,004 - INFO - Training new stacker model.
+2025-10-14 23:55:41,512 - INFO - Stacker F1 best_th=0.30  val_F1=1.000
+2025-10-14 23:55:41,514 - INFO - Running final arbiter decisions...
+2025-10-15 00:21:55,742 - INFO - Creating comprehensive time series results...
+2025-10-15 00:21:55,749 - INFO - Time Series Model Performance:
+2025-10-15 00:21:55,749 - INFO -   Accuracy: 0.922
+2025-10-15 00:21:55,749 - INFO -   Recall: 0.944
+2025-10-15 00:21:55,749 - INFO -   F1-Score: 0.951
+2025-10-15 00:21:55,749 - INFO -   AUC-ROC: 0.936
+2025-10-15 00:21:55,749 - INFO -   Early stage accuracy: 0.900 (n=30)
+2025-10-15 00:21:55,749 - INFO -   Mid stage accuracy: 1.000 (n=30)
+2025-10-15 00:21:55,749 - INFO -   Late stage accuracy: 0.867 (n=30)
+2025-10-15 00:21:55,749 - INFO - Saved comprehensive results ¡÷ results/timeseries_multi_agent_dropout_predictions_OULAD.csv
+2025-10-15 16:48:05,769 - INFO - device=cuda
+2025-10-15 16:48:05,769 - INFO - Model selected: llama2:7b
+2025-10-15 16:48:05,769 - INFO - Loading processed data from datasets/ts_datasets.csv...
+2025-10-15 16:48:06,199 - INFO - ¡V Running on 348 rows from 50 students
+2025-10-15 16:48:06,199 - INFO - Time series dataset: 258 train, 90 test samples
+2025-10-15 16:48:07,198 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-10-15 16:48:11,015 - INFO - using ollama : True
+2025-10-15 16:48:11,015 - INFO - Defining agent feature sets...
+2025-10-15 16:48:11,015 - INFO - Using default OULAD feature sets for agents.
+2025-10-15 16:48:11,015 - INFO - Training time series agents...
+2025-10-15 16:48:11,015 - INFO - Loading pre-trained model for Performance from model_save/OULAD/50_students/Performance_agent_model_OULAD.joblib
+2025-10-15 16:48:11,031 - INFO - Loading pre-trained model for Baseline from model_save/OULAD/50_students/Baseline_agent_model_OULAD.joblib
+2025-10-15 16:48:11,037 - INFO - Loading pre-trained model for Engagement from model_save/OULAD/50_students/Engagement_agent_model_OULAD.joblib
+2025-10-15 16:48:11,054 - INFO - Loading pre-trained model for Temporal from model_save/OULAD/50_students/Temporal_agent_model_OULAD.joblib
+2025-10-15 16:48:11,838 - INFO - SMEMoETS agent training completed
+2025-10-15 16:48:11,941 - INFO - Running time series agent predictions...
+2025-10-15 16:49:31,555 - INFO - Completed Performance agent: mean risk = 0.151
+2025-10-15 16:51:23,024 - INFO - Completed Baseline agent: mean risk = 0.741
+2025-10-15 16:54:27,201 - INFO - Completed Engagement agent: mean risk = 0.510
+2025-10-15 16:57:57,428 - INFO - Completed Temporal agent: mean risk = 0.699
+2025-10-15 16:58:20,876 - INFO - Completed CourseDifficulty agent: mean risk = 0.597
+2025-10-15 17:04:45,331 - INFO - Completed SMETimes agent: mean risk = 1.381
+2025-10-15 17:04:45,331 - INFO - Loading pre-trained stacker model.
+2025-10-15 17:04:45,348 - INFO - Stacker F1 best_th=0.30  val_F1=1.000
+2025-10-15 17:04:45,348 - INFO - Running final arbiter decisions...
+2025-10-15 17:17:48,833 - INFO - device=cuda
+2025-10-15 17:17:48,833 - INFO - Model selected: llama2:7b
+2025-10-15 17:17:48,833 - INFO - Loading processed data from datasets/ts_datasets.csv...
+2025-10-15 17:17:49,263 - INFO - ¡V Running on 708 rows from 100 students
+2025-10-15 17:17:49,289 - INFO - Time series dataset: 522 train, 186 test samples
+2025-10-15 17:17:50,173 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-10-15 17:17:53,543 - INFO - using ollama : True
+2025-10-15 17:17:53,543 - INFO - Defining agent feature sets...
+2025-10-15 17:17:53,543 - INFO - Using default OULAD feature sets for agents.
+2025-10-15 17:17:53,543 - INFO - Training time series agents...
+2025-10-15 17:17:53,543 - INFO - No pre-trained model found or retuning forced. Training new model for Performance...
+2025-10-15 17:19:01,440 - INFO - Saving trained model to Performance_agent_model_OULAD.joblib
+2025-10-15 17:19:01,442 - INFO - No pre-trained model found or retuning forced. Training new model for Baseline...
+2025-10-15 17:20:05,296 - INFO - Saving trained model to Baseline_agent_model_OULAD.joblib
+2025-10-15 17:20:05,309 - INFO - No pre-trained model found or retuning forced. Training new model for Engagement...
+2025-10-15 17:22:23,796 - INFO - Saving trained model to Engagement_agent_model_OULAD.joblib
+2025-10-15 17:22:23,801 - INFO - No pre-trained model found or retuning forced. Training new model for Temporal...
+2025-10-15 17:23:43,932 - INFO - Saving trained model to Temporal_agent_model_OULAD.joblib
+2025-10-15 17:23:44,264 - INFO - SMEMoETS agent training completed
+2025-10-15 17:23:44,361 - INFO - Running time series agent predictions...
+2025-10-15 17:26:20,883 - INFO - Completed Performance agent: mean risk = 0.151
+2025-10-15 17:30:22,322 - INFO - Completed Baseline agent: mean risk = 0.728
+2025-10-15 17:35:55,841 - INFO - Completed Engagement agent: mean risk = 0.498
+2025-10-15 17:43:24,762 - INFO - Completed Temporal agent: mean risk = 0.696
+2025-10-15 17:44:12,933 - INFO - Completed CourseDifficulty agent: mean risk = 0.535
+2025-10-15 18:03:24,044 - INFO - Completed SMETimes agent: mean risk = 1.459
+2025-10-15 18:03:24,044 - INFO - Training new stacker model.
+2025-10-15 18:03:24,718 - INFO - Stacker F1 best_th=0.40  val_F1=0.882
+2025-10-15 18:03:24,718 - INFO - Running final arbiter decisions...
+2025-10-15 18:56:57,158 - INFO - Creating comprehensive time series results...
+2025-10-15 18:56:57,166 - INFO - Time Series Model Performance:
+2025-10-15 18:56:57,166 - INFO -   Accuracy: 0.801
+2025-10-15 18:56:57,166 - INFO -   Recall: 0.775
+2025-10-15 18:56:57,166 - INFO -   F1-Score: 0.810
+2025-10-15 18:56:57,166 - INFO -   AUC-ROC: 0.882
+2025-10-15 18:56:57,166 - INFO -   Early stage accuracy: 0.742 (n=62)
+2025-10-15 18:56:57,169 - INFO -   Mid stage accuracy: 0.855 (n=62)
+2025-10-15 18:56:57,169 - INFO -   Late stage accuracy: 0.806 (n=62)
+2025-10-15 18:56:57,169 - INFO - Saved comprehensive results ¡÷ results/timeseries_multi_agent_dropout_predictions_OULAD.csv
