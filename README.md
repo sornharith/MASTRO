@@ -160,7 +160,7 @@ The system works with three types of educational datasets:
 **XuetangX MOOC Dataset**
 - `Train.csv`, `Test.csv`, `user_info.csv` files
 - Available upon request from research team
-- - Download from: [XuetangX MOOC Dataset](https://www.kaggle.com/datasets/anasnofal/mooc-data-xuetangx)
+- Download from: [XuetangX MOOC Dataset](https://www.kaggle.com/datasets/anasnofal/mooc-data-xuetangx)
 
 ### Dataset Directory Structure
 
@@ -187,7 +187,7 @@ MASTRO/
 ```
 
 To download the OULAD dataset:
-1. Visit the [Open University Learning Analytics Dataset](https://analyse.kmi.open.ac.uk/open_dataset) page
+1. Visit the [Open University Learning Analytics Dataset](https://www.kaggle.com/datasets/anlgrbz/student-demographics-online-education-dataoulad/data) page
 2. Register for access to the dataset
 3. Download the individual CSV files (assessments, courses, studentInfo, studentRegistration, studentAssessment, studentVle, vle)
 4. Place them in `raw_datasets/OULAD/data/` directory
